@@ -1,0 +1,31 @@
+﻿@model ASPMVC_CURDApplication.Models.AddEmployeeViewModel
+
+@{
+}
+<h1>Add Employee</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <!--asp-for="Name": whatever value the Name textbox has, it'll assign to this property.-->
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+     <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+         </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+       </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
